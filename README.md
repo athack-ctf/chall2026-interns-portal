@@ -1,6 +1,6 @@
-# Chall - Your Challenge Title
+# Chall - Intern's Portal
 
-> A brief description of the challenge
+> The challenge involves exploitation of a path info vulnerability to bypass auth and gain access to admin tools that can be used to write files and gain an RCE
 
 ## Challenge Type
 
@@ -9,35 +9,22 @@
 
 ## Design Type
 
-- [X] **Black**-Box
-- [ ] **White**-Box
+- [ ] **Black**-Box
+- [X] **White**-Box
 
 ## Designer(s)
 
-- Ada Lovelace
-- Barbara Liskov
+- Harsh Sawant
 
 ## Description
 
-A high-level overview intended to clarify the concept and intuition behind the challenge, outlining its educational
-goals and the skills it aims to test in participants.
+The challenge intends to test participants' ability to review code and pinpoint a misordered routing check and normalization operation to access the ability to write files and gain code execution
 
 **IMPORTANT:** This description will **NOT** be shared with participants.
 
 ## Category(ies)
 
-- `pwn`
-- `re`
 - `web`
-- `stegano`
-- `env`
-- `crypto`
-- `osint`
-- `web3`
-- `ai`
-- `android`
-- `auto`
-- `misc`
 
 ---
 
