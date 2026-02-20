@@ -61,7 +61,6 @@ class AdminController {
                 }
                 
                 $fullCommand = "echo " . escapeshellarg($content) . " | tee /var/www/html/filesystem/" . escapeshellarg($filename);
-                // $just = shell_exec($fullCommand . ' 2>&1');
                 exec($fullCommand . ' 2>&1', $outputLines, $returnVar);
                 if ($returnVar !== 0) {
                 $error = "Failed to create file. Error: " . implode("\n", $outputLines);
