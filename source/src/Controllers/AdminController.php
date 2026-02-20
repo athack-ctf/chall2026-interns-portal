@@ -70,7 +70,7 @@ class AdminController {
                     $output = "Created file at /var/www/html/filesystem/" . $filename;
                     $this->dashboard($output, '');
                 }
-
+                break;
             default: 
                 $this->dashboard('', "How'd you even get here?");
                 break;
