@@ -12,8 +12,9 @@ category: "Web"
 # DO NOT remove the vertical character "|" (aka pipe character)
 description: |
   Recon team found that a Web Portal initialized by the Aliens is made by one of their interns. And it's doing something weird with its urls. 
+
   Find a way to exploit and gain access to their servers.
-  
+
   [Start your challenge instance](https://instancer.athackctf.com/chall2026-interns-portal/create)
 
 # The field connection_info is used to provide a link, hostname, or instructions on how to connect to a challenge
