@@ -1,0 +1,11 @@
+name: chall2026-interns-portal
+
+services:
+  interns-portal:
+    image: athack-ctf/chall2026-interns-portal:latest
+    container_name: chall2026-interns-portal
+    build:
+      context: .
+      dockerfile: source/Dockerfile
+    ports:
+      - "53012:8000"

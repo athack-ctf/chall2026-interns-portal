@@ -1,1 +1,0 @@
-Recon team found that one of the Web Portals initiated by the Aliens is made by one of their interns. And it does something weird with its urls. Find a way to exploit and gain access to their servers.

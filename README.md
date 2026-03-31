@@ -1,69 +1,83 @@
-# Chall - Intern's Portal
+# @Hack 2026: Intern's Portal
 
-> The challenge involves exploitation of a path info vulnerability to bypass auth and gain access to admin tools that can be used to write files and gain an RCE
+> Authored by [Harsh](https://github.com/sudo-i-u-harsh11235).
 
-## Challenge Type
+- **Category**: `Web`
+- **Solves**: `25/120`
+- **Tags**: `none`
+- **Protocol**: `http`
 
-- [ ] **OFF**line
-- [X] **ON**line
+> Recon team found that a Web Portal initialized by the Aliens is made by one of their interns. And it's doing something
+> weird with its urls.
+>
+> Find a way to exploit and gain access to their servers.
+>
 
-## Design Type
+## Files
 
-- [ ] **Black**-Box
-- [X] **White**-Box
+- **[Download: source-code.zip](https://github.com/athack-ctf/chall2026-interns-portal/raw/refs/heads/main/offline-artifacts/source-code.zip)**
 
-## Designer(s)
+## Access a dockerized instance
 
-- Harsh Sawant
+Run challenge container using docker compose
 
-## Description
+```
+docker compose up -d
+```
 
-The challenge intends to test participants' ability to review code and pinpoint a misordered routing check and normalization operation to access the ability to write files and gain code execution
+Open below URL on your browser
 
-**IMPORTANT:** This description will **NOT** be shared with participants.
+```
+http://localhost:53012/
+```
 
-## Category(ies)
+<details>
+<summary>
+How to stop/restart challenge?
+</summary>
 
-- `web`
+To stop the challenge run
+
+```
+docker compose stop
+```
+
+To restart the challenge run
+
+```
+docker compose restart
+```
+
+</details>
+
+## Reveal Flag(s)
+
+Did you try solving this challenge?
+<details>
+<summary>
+Yes
+</summary>
+
+Did you **REALLY** try solving this challenge?
+
+<details>
+<summary>
+Yes, I promise!
+</summary>
+
+- Flag 1: `ATHACKCTF{path_n0rm4liz4t10n_g0ne_wr0ng}`
+
+</details>
+</details>
+
 
 ---
 
-# Project Structure
+## About @Hack
 
-## 1. HACKME.md
+[@Hack](https://athackctf.com/) is an annual CTF (Capture The Flag) competition hosted
+by [HEXPLOIT ALLIANCE](https://hexploit-alliance.com/) and [TECHNATION](https://technationcanada.ca/) at Concordia
+University in Montreal, Canada.
 
-- **[HACKME.md](HACKME.md)**: A teaser or description of the challenge to be shared with participants (in CTFd).
-
-## 2. Source Code
-
-- **[source/README.md](source/README.md)**: Comprehensive instructions on how to have a running instance of your
-  challenge from the source.
-  If your project includes multiple subprojects, please consult us (Alin and William).
-- **[source/*](source/)**: Your source code.
-
-## 3. Offline Artifacts [OPTIONAL]
-
-> **NOTE:** This directory is optional for online challenges. However, if offline artifacts need to be provided as well, 
-> they should be placed here.
-
-- **[offline-artifacts/*](offline-artifacts/)**: All files intended to be downloaded by participants
-  (e.g., a flagless version of the running binary executable of a pwn challenge).
-  For large files (exceeding 100 MB), please consult us (Alin and William).
-
-## 4. Solution
-
-- **[solution/README.md](solution/README.md)**: A detailed writeup of the working solution.
-- **[solution/FLAGS.md](solution/FLAGS.md)**: A single markdown file listing all (up-to-date) flags.
-- **[solution/*](solution/)**: Any additional files or code necessary for constructing a reproducible solution for the
-  challenge (e.g., `PoC.py`, `requirement.txt`, etc.).
-
-## 5. Dockerization
-
-> **NOTE:** For deployment on @Hack's infrastructure, online challenges must be containerized.
-> However, this requirement does not apply during the early stages of challenge development, so do not hesitate to start
-> building your online challenge if you are unfamiliar with containerization.
-> We (Anis and Hugo) will take care of it.
-
-- **[source/Dockerfile](source/Dockerfile)**: Needed for building a containerized image of the online challenge.
-- **[source/docker-compose.yml](source/docker-compose.yml)**: Needed for a configuration-free run of the online
-  challenge
+---
+[Check more challenges from @Hack 2026](https://github.com/athack-ctf/AtHackCTF-2026-Challenges).
