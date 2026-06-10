@@ -5,7 +5,7 @@ services:
     image: athack-ctf/chall2026-interns-portal:latest
     container_name: chall2026-interns-portal
     build:
-      context: .
-      dockerfile: source/Dockerfile
+      context: ./source
+      dockerfile: Dockerfile
     ports:
       - "53012:8000"
